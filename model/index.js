@@ -26,9 +26,9 @@ module.exports = (Sequelize, config)=>
     ingestion.belongsTo(agent, {foreignKey: 'reportedById'});
 
     return {
-        like,
-        user,
-        tweet,
+        ingestion,
+        person,
+        food,
         agent,
         sequelize: sequelize,
         Sequelize: Sequelize
